@@ -7,8 +7,8 @@ import os
 # CONFIGURACIÓN
 # =========================
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-CHAT_ID = os.getenv("CHAT_ID")
+BOT_TOKEN = os.getenv("8665257294:AAGSWP4vTXijyNeZgX-kc5HFztZV8IR9hkw")
+CHAT_ID = os.getenv("8081261077")
 
 URL = "https://shop.gmm-tv.com/"
 CHECK_INTERVAL = 60  # segundos
