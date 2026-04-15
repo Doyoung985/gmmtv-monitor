@@ -20,11 +20,13 @@ ARCHIVO_ESTADO = "estado_inicial.txt"
 # =========================
 def enviar_mensaje(mensaje):
     url = f"https://api.telegram.org/bot{BOT_TOKEN}/sendMessage"
-    data = {
-        "chat_id": CHAT_ID,
-        "text": mensaje
-    }
-    requests.post(url, data=data)
+
+    for chat_id in CHAT_IDS:
+        data = {
+            "chat_id": chat_id,
+            "text": mensaje
+        }
+        requests.post(url, data=data)
 
 # =========================
 # SCRAPER
