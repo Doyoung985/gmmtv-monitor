@@ -37,6 +37,7 @@ def obtener_productos():
     }
 
     response = requests.get(URL, headers=headers)
+    print(response.text[:500]) 
     soup = BeautifulSoup(response.text, "html.parser")
 
     productos = []
